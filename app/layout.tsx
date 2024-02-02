@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 
 import { ConvexClientProvider } from '@/providers/convex-client-provider';
+import { ModalProvider } from '@/providers/modal-provider';
 
 import { Toaster } from '@/components/ui/sonner';
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <ConvexClientProvider>
           {children}
           <Toaster richColors />
+          <ModalProvider />
         </ConvexClientProvider>
       </body>
     </html>
