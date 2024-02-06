@@ -27,7 +27,7 @@ type Storage = {
 // will not change during a session, like a user's name or avatar.
 type UserMeta = {
   id?: string;
-  userInfo?: {
+  info?: {
     name: string;
     picture?: string;
   };
